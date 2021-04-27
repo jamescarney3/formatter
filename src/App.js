@@ -5,11 +5,17 @@ import { HomePage, InPage, OutPage } from 'pages';
 import { StoreProvider } from 'store';
 
 
+/*
+main application module: wrap the whole tree in a provider for our store
+context and router context, render a cursory navigation interface and a router
+switch with pages
+*/
 const App = () => (
   <StoreProvider>
     <Router>
       <h1>Hello, formatter</h1>
       <div>
+        {/* a navbar for the expeditious */}
         <Link to="/">Home</Link>
         {' '}
         <Link to="/in">In</Link>

@@ -1,5 +1,8 @@
 import React from 'react';
 
+/*
+exactly what it says on the label
+*/
 const HomePage = () => (
   <div>
     <p>
